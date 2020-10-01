@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <title>Serena's Portfolio Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <ul class="nav-list">
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -18,12 +19,12 @@
         </ul>
     </nav>
     <section id="welcome-section">
-        <h1>About</h1>
-        <h2>Hi, I'm a Web Developement Padawan Learner!</h2>
+        <h1>Hi, I'm Serena Draney</h1>
+        <h2>I'm a Web Developement Padawan Learner</h2>
     </section>
     <section id="projects" class="projects-section">
         <h1>Projects</h1>
-        <h2>These are some of my projects!</h2>
+        <h2>These are some of my projects</h2>
         <div class="projects-grid">
             <a href="#" target="_blank" class="project project-tile">
                 <img class="project-image" src="https://picsum.photos/300/300">
@@ -49,17 +50,22 @@
                 </p>
             </a>
         </div>
-
     </section>
     <section id="contact" class="contact-section">
         <h1>Contact</h1>
         <div class="contact-links">
-            <a
-            href="https://facebook.com/freecodecamp"
-            target="_blank"
-            class="btn contact-details"
-            ><i class="fab fa-facebook-square"></i> Facebook</a
-          >
+            <a href="https://www.facebook.com/serena.draney" target="_blank" class="btn contact-details">
+                <i class="fab fa-facebook-square"></i> Facebook</a>
+
+            <a id="profile-link" href="https://github.com/serenagirl431" target="_blank" class="btn contact-details">
+                <i class="fab fa-github">GitHub</i></a>
+            <a id="profile-link" href="https://twitter.com/" target="_blank" class="btn contact-details">
+                <i class="fab fa-twitter">Twitter</i></a>
+            <a id="profile-link" href="mailto:10848034@my.uvu.edu" target="_blank" class="btn contact-details">
+                <i class="fas fa-at">Send an email</i></a>
+            <a id="profile-link" href="tel:555-262-3306" target="_blank" class="btn contact-details">
+                <a id="profile-link" href="tel:555-262-3306" target="_blank" class="btn contact-details">
+                    <i class="fas fa-mobile-alt"> Call Me</i></a>
 
         </div>
     </section>
