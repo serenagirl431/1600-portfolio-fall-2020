@@ -1,0 +1,124 @@
+img.logo{
+    width: 225px;
+  }
+  body {
+    background-color: FFD6B0;
+    margin: 0 auto;
+  }
+  main {
+    width: 960px;
+    margin: 1rem auto;
+  }
+  header {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  #bio {
+    display: flex;
+    margin: 1rem 0 2rem 0;
+    justify-content: space-between;
+  
+  }
+  .bio-picture{
+   height: 291px;
+  }
+  #bio-choose{
+    width: 100%;
+    margin-left: 1rem;
+  }
+  
+  #name-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .paragraph-text {
+    padding: 8px;
+    background-color: #53652B;
+    font: 1rem "Roboto", sans-serif;
+    padding-left: 15px;
+    color: #F2E5BD;
+  }
+  
+  ul {
+    padding: 8px;
+    padding-left: 20px;
+    color: #F2E5BD;
+    
+    font: 1rem "Roboto", sans-serif;
+  }
+  
+  #tech {
+   display: flex;
+   justify-content: space-between;
+    margin: 20px 0;
+  
+  }
+  figure {
+    text-align: center;
+    margin: 0px;
+  }
+  figure > img {
+     max-height: 150px;
+  }
+  
+  figcaption {
+    color: #000;
+    font: 1rem "Roboto", sans-serif;
+    background-color:  rgba(226,158,106, .8);
+   position: relative;
+    bottom: 20px;
+    height: 40px;
+    max-width: 180px;
+    width: 100%;
+  }
+  
+  #interest > h2 {
+    font-weight: bold;
+  }
+  .final-paragraph {
+    margin-bottom: 15px;
+  }
+  .excited-header {
+    margin-bottom: 15px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .fit-picture {
+    height: 90px;
+  }
+  
+  p {
+    margin: 0px;
+    color: #F2E5BD;
+  }
+  h1 {
+     color: #0C0D08;
+     font: 2em "Roboto", sans-serif;
+      margin: 0;
+  }
+  h2, h4{
+    margin; 0px;
+    color: F2E5BD;
+    font: 1.2em "Roboto", sans-serif;
+  }
+  
+  h5 {
+    margin: 0px;
+    color: #F2E5BD;
+    font: 1em "Roboto", sans-serif;
+  }
+  time {
+    color:#0C0D08;
+    font: 1.2em "Roboto", sans-serif;
+    font-weight: bold;
+    height: 25px;
+  }
+  footer p {
+    color: black;
+  }
