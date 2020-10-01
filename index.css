@@ -14,16 +14,55 @@ nav {
 .nav-list a:hover {
     background: blue;
 }
-.nav-list ul {
+.nav-list {
     display: flex;
     list-style-type: none;
 }
 li {
     list-style-type: none;
-
-
 }
 
 #welcome-section{
     background-color: yellowgreen;
 }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  /* .project {
+    background: #cccccc;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+
+  /* .project-image {
+    /* height: calc(100% - 6.8rem);
+    width: 100%; c
+    object-fit: cover;
+  }
+   */
+   a {
+    text-decoration: none;
+    color: #f0f0f0;
+  }
+  .projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
