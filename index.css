@@ -14,7 +14,7 @@ body {
 #navbar {
   display: flex;
   justify-content: flex-end;
-  background-color: red;
+  background-color: #E86143;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
@@ -23,7 +23,8 @@ body {
   z-index: 10;
 }
 .nav-list a:hover {
-    background: blue;
+    background:  #303841;
+    
 }
 .nav-list {
     display: flex;
@@ -112,7 +113,7 @@ li {
   @media screen and (max-width: 30em) {
     #welcome-section {
       background-image: linear-gradient(270deg, #a84f3c 0%, #9df57a 100%);
-      font-size: small;
+      font-size: large;
     }
   }.contact-section {
     display: flex;
