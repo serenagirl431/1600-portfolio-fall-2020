@@ -59,6 +59,14 @@ li {
     margin: 0 auto;
     margin-bottom: 6rem;
   }
+  .project-title{
+    font-size: 2rem;
+  }
+  .projects-main{
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 2rem;
+  }
   /* .project {
     background: #cccccc;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -77,8 +85,13 @@ li {
   }
   .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 2rem 2rem;
     background:  #303841;
+  
+  }
+  .project-image{
+    height: 300px;
+    width: 300px;
   }
   .contact-links {
     display: flex;
