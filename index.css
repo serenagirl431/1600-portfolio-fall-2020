@@ -126,4 +126,6 @@ li {
     padding: 0 2rem;
     background:#C4876A;
   }
-  
+  h1, h2 {
+    font-size: large;
+  }
