@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main-title {
+    color: goldenrod;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+figure {
+    margin: 1rem;
+    
+}
+figcaption {
+    text-align: center;
+    border-radius: ;
+}
