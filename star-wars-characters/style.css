@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainHeader {
+    background-color: green;
+    justify-content: flex-box;
+
+}
