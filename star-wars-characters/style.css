@@ -2,9 +2,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-.mainHeader {
+body {
     background-color: green;
+}
+.mainHeader {
+    background-color: peachpuff;
     display: flex;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 1rem;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+figure img {
+    max-height: 12rem;
 }
