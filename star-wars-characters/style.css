@@ -4,6 +4,7 @@
 }
 .mainHeader {
     background-color: green;
-    justify-content: flex-box;
-
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
 }
