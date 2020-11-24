@@ -10,6 +10,7 @@ body {
 .main-title {
     color: goldenrod;
     text-align: center;
+    padding: 2rem;
 }
 main {
     display: flex;
@@ -22,5 +23,7 @@ figure {
 }
 figcaption {
     text-align: center;
-    border-radius: ;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
 }
