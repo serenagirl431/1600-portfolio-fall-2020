@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 .container {
     display: flex;
@@ -9,7 +9,10 @@ body {
     margin: 50px 170px 20px;
 
 }
-
+img {
+    position: relative;
+    z-index: 1;
+}
 
 h1 {
     color: blueviolet;
