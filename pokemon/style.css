@@ -1,3 +1,10 @@
-h1 {
-    
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pokemonGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
