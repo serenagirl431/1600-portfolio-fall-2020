@@ -31,11 +31,14 @@ function populatePokeCard(pokemon) {
     pokeCard.className = 'card'
     let cardFront = document.createElement('div')
     let frontLabel = document.createElement('p')
+    let frontImage = document.createElement('img')
     let cardBack = document.createElement('div')
     let backLabel = document.createElement('p')
 
     frontLabel.textContent = pokemon.name
+    frontImage.src = `../images/pokemon/00${pokemon.id}.png`
     backLabel.textContent = `I'm the back of the card`
+    cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
     cardBack.appendChild(backLabel)
     pokeCard.appendChild(cardFront)
