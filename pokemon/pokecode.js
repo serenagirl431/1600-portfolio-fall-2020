@@ -11,7 +11,7 @@ async function getAPIData(url){
 
 // use the getAPIData
 function loadPage() {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon`).then
+    getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=30`).then
         (async (data) => {
             for (const pokemon of data.results) {
                 await getAPIData(pokemon.url).then((pokeData) => {
@@ -36,7 +36,7 @@ function populatePokeCard(pokemon) {
     let backLabel = document.createElement('p')
 
     frontLabel.textContent = pokemon.name
-    frontImage.src = `../images/pokemon/00${pokemon.id}.png`
+    frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
     backLabel.textContent = `I'm the back of the card`
     cardFront.appendChild(frontImage)
     cardFront.appendChild(frontLabel)
@@ -46,5 +46,12 @@ function populatePokeCard(pokemon) {
     pokeScene.appendChild(pokeCard)
     pokemonGrid.appendChild(pokeScene)
 
+}
+function getImageFileName(pokemon) {
+    if (pokemon.id < 10) {
+        return `00${pokemon.id}`
+    } else if (pokemon.id > 9 && pokemon.id < 99) {
+        return `0${pokemon.id}`
+    }
 }
 loadPage()
