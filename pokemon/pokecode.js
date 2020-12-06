@@ -1,4 +1,6 @@
 //resuable async function to fetch data from the provided url
+import { removeChildren } from '../utils/index.js'
+
 async function getAPIData(url){
     try{
         const response = await fetch(url)
@@ -23,11 +25,26 @@ function loadPage() {
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const makeNewButton = document.querySelector('button')
+const theGoodGodButton = document.querySelector('.theGoodGodButton')
+const theBadGodButton = document.querySelector('.theBadGodButton')
 
-makeNewButton.addEventListener('click', () => {
+theGoodGodButton.addEventListener('click', () => {
+loadPage()
+theGoodGodButton.disabled = true
+})
+theBadGodButton.addEventListener('click', () => {
     getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
     console.log(pokemon.name)
 })
+   // removeChildren(pokeScene)
+    //theBadGodButton.disabled = true
+   // })
+    
+    
+/*makeNewButton.addEventListener('click', () => {
+    getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
+    console.log(pokemon.name)
+})*/
 
 function populatePokeCard(pokemon) {
     let pokeScene = document.createElement('div')
@@ -73,4 +90,3 @@ function getImageFileName(pokemon) {
         return `0${pokemon.id}`
     }
 }
-loadPage()
