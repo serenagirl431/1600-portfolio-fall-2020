@@ -2,7 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+  background-color: gray;
+}
 .pokemonGrid {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +15,7 @@
     width: 200px;
     height: 260px;
     border: 1px solid #ccc;
+    border: 5px solid black;
     margin: 10px;
     perspective: 600px;
 }
