@@ -44,3 +44,20 @@ body {
   .card.is-flipped {
     transform: rotateY(180deg);
   }
+  div.title {
+    background-color: black;
+    padding:10rem;
+    background-image:url("leaves")
+  }
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-justify: center;
+  }
+  h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
