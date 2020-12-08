@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: black;
+    color:white;
 }
 .scene {
     padding: 20px;
@@ -34,11 +36,11 @@ body {
     backface-visibility: hidden;
   }
   .card__face--front {
-    background: red;
+    background: linear-gradient(rgb(245, 245, 245), darkgreen);
   }
   
   .card__face--back {
-    background: blue;
+    background:green;
     transform: rotateY(180deg);
   }
   .card.is-flipped {
@@ -46,17 +48,20 @@ body {
   }
   div.title {
     background-color: black;
-    padding:10rem;
-    background-image:url("leaves")
+    padding: 10rem;
+    background-image: url(/images/leaves.jpg);
+    background-repeat: repeat-x;
+    text-shadow: 2px 1px black;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(255, 255, 255);
+    max-height: 364px;
   }
   h1 {
-    color: white;
     display: flex;
     justify-content: center;
     text-justify: center;
   }
   h2 {
-    color: white;
     display: flex;
     justify-content: center;
     padding: 10px;
