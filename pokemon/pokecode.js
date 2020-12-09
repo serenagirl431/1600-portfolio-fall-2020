@@ -47,7 +47,7 @@ theBadGodButton.addEventListener('click', () => {
 })*/
 
 function populatePokeCard(pokemon) {
-    let pokeScene = document.createElement('div')
+   let pokeScene = document.createElement('div')
     pokeScene.className = 'scene'
     let pokeCard = document.createElement('div')
     pokeCard.className = 'card'
@@ -76,12 +76,29 @@ function populateCardFront(pokemon) {
 }
 
 function populateCardBack(pokemon) {
+    console.log(pokemon.abilities)
     let cardBack = document.createElement('div')
     cardBack.className = `card__face card__face--back`
-    let backLabel = document.createElement('p')
-    backLabel.textContent = `I'm the back of the card`
+    let backLabel = document.createElement('h3')
+    backLabel.textContent = `Abilities:`
+    let abilityList = document.createElement('ul')
+    pokemon.abilities.forEach(ability => {
+        let abilityName = document.createElement('li')
+        abilityName.textContent = ability.ability.name
+        abilityList.appendChild(abilityName)
+    })
+    let movesLabel = document.createElement('h3')
+    movesLabel.textContent = 'Best Move:'
     cardBack.appendChild(backLabel)
+    cardBack.appendChild(abilityList)
+    cardBack.appendChild(movesLabel)
     return cardBack
+}
+function getBestAccuracy(pokemoves) {
+    const bestAccuracy = pokemoves.reduce((mostAccurate, move) => {
+      return mostAccurate.accuracy > move.accuracy ? mostAccurate : move;  
+    }, {});
+
 }
 function getImageFileName(pokemon) {
     if (pokemon.id < 10) {
