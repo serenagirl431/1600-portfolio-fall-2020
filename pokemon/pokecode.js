@@ -33,12 +33,12 @@ loadPage()
 theGoodGodButton.disabled = true
 })
 theBadGodButton.addEventListener('click', () => {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
+    //getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
     console.log(pokemon.name)
+    //pokescene.removeChildren(pokemonGrid)
 })
-   // removeChildren(pokeScene)
-    //theBadGodButton.disabled = true
-   // })
+  
+    
     
     
 /*makeNewButton.addEventListener('click', () => {
@@ -89,13 +89,18 @@ function populateCardBack(pokemon) {
     })
     let movesLabel = document.createElement('h3')
     movesLabel.textContent = 'Best Move:'
+    let moveAccuracy = document.createElement('h3')
+    moveAccuracy = document.createElement('h4')
+    const mostAccurateMove = getBestAccuracy(pokemon.moves)
+    moveAccuracy.textContent =`${mostAccurateMove.move.name}`
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
+    cardBack.appendChild(moveAccuracy)
     return cardBack
 }
 function getBestAccuracy(pokemoves) {
-    const bestAccuracy = pokemoves.reduce((mostAccurate, move) => {
+    return pokemoves.reduce((mostAccurate, move) => {
       return mostAccurate.accuracy > move.accuracy ? mostAccurate : move;  
     }, {});
 
