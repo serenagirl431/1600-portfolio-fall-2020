@@ -1,4 +1,3 @@
-//resuable async function to fetch data from the provided url
 import { removeChildren } from '../utils/index.js'
 
 async function getAPIData(url){
@@ -11,7 +10,6 @@ async function getAPIData(url){
     }
 }
 
-// use the getAPIData
 function loadPage() {
     getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=30&offset=34`).then
         (async (data) => {
@@ -24,27 +22,15 @@ function loadPage() {
 }
 
 const pokemonGrid = document.querySelector('.pokemonGrid')
-const makeNewButton = document.querySelector('button')
 const theGoodGodButton = document.querySelector('.theGoodGodButton')
 const theBadGodButton = document.querySelector('.theBadGodButton')
 
 theGoodGodButton.addEventListener('click', () => {
 loadPage()
-theGoodGodButton.disabled = true
 })
 theBadGodButton.addEventListener('click', () => {
-    //getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
-    console.log(pokemon.name)
-    //pokescene.removeChildren(pokemonGrid)
+    removeChildren(pokemonGrid)
 })
-  
-    
-    
-    
-/*makeNewButton.addEventListener('click', () => {
-    getAPIData(`https://pokeapi.co/api/v2/pokemon/750`)
-    console.log(pokemon.name)
-})*/
 
 function populatePokeCard(pokemon) {
    let pokeScene = document.createElement('div')
@@ -54,9 +40,7 @@ function populatePokeCard(pokemon) {
     pokeCard.addEventListener('click', () => {
         pokeCard.classList.toggle('is-flipped')
     })
-    
-   
-    
+
     pokeCard.appendChild(populateCardFront(pokemon))
     pokeCard.appendChild(populateCardBack(pokemon))
     pokeScene.appendChild(pokeCard)
@@ -87,6 +71,7 @@ function populateCardBack(pokemon) {
         abilityName.textContent = ability.ability.name
         abilityList.appendChild(abilityName)
     })
+    
     let movesLabel = document.createElement('h3')
     movesLabel.textContent = 'Best Move:'
     let moveAccuracy = document.createElement('h3')
