@@ -16,8 +16,6 @@ body {
     padding: 20px;
     width: 200px;
     height: 260px;
-    border: 1px solid #ccc;
-    border: 5px solid black;
     margin: 10px;
     perspective: 600px;
 }
@@ -28,6 +26,9 @@ body {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .card__face {
     position: absolute;
@@ -36,7 +37,11 @@ body {
     backface-visibility: hidden;
   }
   .card__face--front {
+   
     background: linear-gradient(rgb(245, 245, 245), darkgreen);
+    min-width: 200px;
+    min-height: 250px;
+    padding: 10px 0; 
   }
   
   .card__face--back {
@@ -65,4 +70,24 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
+    text-align: center;
+  }
+  h3 {
+    color:white;
+  }
+  .theBadGodButton {
+    background-color: black;
+    color: white;
+  }
+  .theGoodGodButton {
+    background-color: black;
+    color: white;
+  }
+  
+  .buttons {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
   }
