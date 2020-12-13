@@ -108,6 +108,11 @@ body {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
   }
+  .pokemonName {
+    text-transform: uppercase;
+    background-color: white;
+    max-height: 17%;
+  }
   
   footer {
     text-align: center;

@@ -33,8 +33,13 @@ theBadGodButton.addEventListener('click', () => {
     removeChildren(pokemonGrid)
 })
 newButton.addEventListener('click', () => {
-    loadPage()
+    let pokeName = prompt("Name that Pokemon!")
+    populateNewPokeCard(createNewPokemon(pokeName))
 })
+function populateNewPokeCard(pokeName) {
+    pokeName.document.createElement('h1')
+ return (pokeName)
+}
 
 function populatePokeCard(pokemon) {
    let pokeScene = document.createElement('div')
@@ -64,7 +69,7 @@ function populateCardFront(pokemon) {
 }
 
 function populateCardBack(pokemon) {
-    console.log(pokemon.abilities)
+    /*console.log(pokemon.abilities)*/
     let cardBack = document.createElement('div')
     cardBack.className = `card__face card__face--back`
     let backLabel = document.createElement('h3')
@@ -84,14 +89,22 @@ function populateCardBack(pokemon) {
     let weightLabel = document.createElement('h3')
     weightLabel.textContent = 'Weight:'
     pokeWeight.textContent = pokemon.weight
+    let pokemonName = document.createElement('h2')
+    let nameLabel = document.createElement('h3')
+    nameLabel.textContent = 'Name:'
+    pokemonName.textContent = pokemon.name
+    pokemonName.classList = ('pokemonName')
     const mostAccurateMove = getBestAccuracy(pokemon.moves)
     moveAccuracy.textContent =`${mostAccurateMove.move.name}`
+    cardBack.appendChild(pokemonName)
     cardBack.appendChild(backLabel)
     cardBack.appendChild(abilityList)
     cardBack.appendChild(movesLabel)
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(weightLabel)
     cardBack.appendChild(pokeWeight)
+   
+
     return cardBack
 }
 function getBestAccuracy(pokemoves) {
@@ -106,4 +119,14 @@ function getImageFileName(pokemon) {
     } else if (pokemon.id > 9 && pokemon.id < 99) {
         return `0${pokemon.id}`
     }
+}
+function Pokemon(name, weight, abilities, mostAccurate) {
+    this.pokeName = pokeName
+    this.abilities = abilities
+    this.mostAccurate = mostAccurate
+    this.weight = weight
+    
+}
+function createNewPokemon(name) {
+return Pokemon(pokeName, ['pickup','technician','unnerve'], ['unnerve'], 150)
 }
