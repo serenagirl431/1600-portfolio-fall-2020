@@ -67,18 +67,6 @@ li {
     color: white;
     padding-bottom: 2rem;
   }
-  /* .project {
-    background: #cccccc;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-  }
-
-  /* .project-image {
-    /* height: calc(100% - 6.8rem);
-    width: 100%; c
-    object-fit: cover;
-  }
-   */
    a {
     text-decoration: none;
     color: #f0f0f0;
@@ -140,5 +128,11 @@ li {
     background:#C4876A;
   }
   h1, h2 {
-    font-size: large;
+    font-family: 'Poppins', sans-serif;
+  }
+  #welcome-section {
+    color: black;
+    background-color:darkblue;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
   }

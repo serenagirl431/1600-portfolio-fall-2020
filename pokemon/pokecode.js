@@ -34,11 +34,22 @@ theBadGodButton.addEventListener('click', () => {
 })
 newButton.addEventListener('click', () => {
     let pokeName = prompt("Name that Pokemon!")
+    console.log(pokeName)
     populateNewPokeCard(createNewPokemon(pokeName))
 })
 function populateNewPokeCard(pokeName) {
-    pokeName.document.createElement('h1')
- return (pokeName)
+    let pokeScene = document.createElement('div')
+    pokeScene.className = 'scene'
+    let pokeCard = document.createElement('div')
+    pokeCard.className = 'card'
+    pokeCard.addEventListener('click', () => {
+        pokeCard.classList.toggle('is-flipped')
+    })
+
+    pokeCard.appendChild(populateCardFront(pokemon))
+    pokeCard.appendChild(populateCardBack(pokemon))
+    pokeScene.appendChild(pokeCard)
+    pokemonGrid.appendChild(pokeScene)
 }
 
 function populatePokeCard(pokemon) {
@@ -103,7 +114,7 @@ function populateCardBack(pokemon) {
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(weightLabel)
     cardBack.appendChild(pokeWeight)
-   
+    cardBack.appendChild(pokeName) 
 
     return cardBack
 }
@@ -120,13 +131,13 @@ function getImageFileName(pokemon) {
         return `0${pokemon.id}`
     }
 }
-function Pokemon(name, weight, abilities, mostAccurate) {
-    this.pokeName = pokeName
+/*function Pokemon(pokeName, weight, abilities, mostAccurate) {
+    //this.pokeName = pokeName
     this.abilities = abilities
     this.mostAccurate = mostAccurate
-    this.weight = weight
+    this.weight = weight}    */
     
-}
-function createNewPokemon(name) {
+function createNewPokemon(pokeName) {
 return Pokemon(pokeName, ['pickup','technician','unnerve'], ['unnerve'], 150)
+
 }
