@@ -24,12 +24,16 @@ function loadPage() {
 const pokemonGrid = document.querySelector('.pokemonGrid')
 const theGoodGodButton = document.querySelector('.theGoodGodButton')
 const theBadGodButton = document.querySelector('.theBadGodButton')
+const newButton = document.querySelector('.newButton')
 
 theGoodGodButton.addEventListener('click', () => {
 loadPage()
 })
 theBadGodButton.addEventListener('click', () => {
     removeChildren(pokemonGrid)
+})
+newButton.addEventListener('click', () => {
+    loadPage()
 })
 
 function populatePokeCard(pokemon) {

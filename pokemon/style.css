@@ -13,7 +13,6 @@ body {
     color:white;
 }
 .scene {
-    padding: 20px;
     width: 200px;
     height: 250px;
     margin: 10px;
@@ -91,9 +90,17 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
   }
-  .theGoodGodButton, .theBadGodButton a:hover {
+ 
+  .newButton{
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  button.theGoodGodButton:hover, button.theBadGodButton:hover, button.newButton:hover{
     background-color: white;
-    color: black;
+    color:green;
   }
   
   .buttons {
