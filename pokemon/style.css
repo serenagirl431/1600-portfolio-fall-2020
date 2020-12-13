@@ -106,6 +106,7 @@ body {
   .buttons {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding: 20px;
   }
   
   footer {
