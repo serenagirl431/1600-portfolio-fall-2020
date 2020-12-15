@@ -35,7 +35,7 @@ theBadGodButton.addEventListener('click', () => {
 newButton.addEventListener('click', () => {
     let pokeName = prompt("Name that Pokemon!")
     console.log(pokeName)
-    populateNewPokeCard(createNewPokemon(pokeName))
+    //populateNewPokeCard(createNewPokemon(pokeName))
 })
 function populateNewPokeCard(pokeName) {
     let pokeScene = document.createElement('div')
@@ -114,7 +114,7 @@ function populateCardBack(pokemon) {
     cardBack.appendChild(moveAccuracy)
     cardBack.appendChild(weightLabel)
     cardBack.appendChild(pokeWeight)
-    cardBack.appendChild(pokeName) 
+    //cardBack.appendChild(pokeName) 
 
     return cardBack
 }
