@@ -22,6 +22,10 @@ h1 {
     justify-content: center;
     text-justify: center;
 }
+figcaption {
+    width: 100px;
+    align-content: center;
+}
 #main{
     display: flex;
     flex-wrap: wrap;
